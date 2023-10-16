@@ -3,20 +3,26 @@ package com.design.singleton;
 public class Singleton {
 
     public static Singleton myInstance;
-    private String myVariable;
+    private int count;
 
-    private Singleton(){}
+    private Singleton(){
+        this.count = 0;
+        System.out.println("Singleton Object instantiated");
+    }
 
-    public static Singleton getMyInstance(){
-        if(myInstance==null) myInstance = new Singleton();
+    synchronized public static Singleton getMyInstance(){
+        if(myInstance==null) {
+            myInstance = new Singleton();
+        }
         return myInstance;
     }
 
-    public String getMyVariable() {
-        return myVariable;
+    public int getCount() {
+        this.count++;
+        return count;
     }
 
-    public void setMyVariable(String myVariable) {
-        this.myVariable = myVariable;
+    public void setCount(int count) {
+        this.count = count;
     }
 }
