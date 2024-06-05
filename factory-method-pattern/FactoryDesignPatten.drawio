@@ -1,9 +1,66 @@
-<mxfile host="app.diagrams.net" modified="2024-06-05T13:55:11.534Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" version="24.4.13" etag="atura7UNvi5Ly7SGpcsr" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-05T14:58:07.414Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="azs2b665ND4eS2Nt6Ef1" version="24.4.14" type="github">
   <diagram name="Page-1" id="wsAsruq1sUCmWpypPWbr">
-    <mxGraphModel>
+    <mxGraphModel dx="984" dy="540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Factory Method Pattern&amp;nbsp;&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;An interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="270" y="40" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-10" value="ConcreteProduct" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="440" width="140" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-14" value="Product" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="270" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-15" value="Extends / Implements" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="57HQ5lrbEki3mv6XQ5M7-10" target="57HQ5lrbEki3mv6XQ5M7-14">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="390" y="390" as="sourcePoint" />
+            <mxPoint x="550" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-16" value="All Product must implement the same interface so that the classes that use the products can refer to the interface, not the concrete class" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry y="350" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-23" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.507;entryY=1.077;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="57HQ5lrbEki3mv6XQ5M7-34" target="57HQ5lrbEki3mv6XQ5M7-30">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="540" y="439" as="sourcePoint" />
+            <mxPoint x="540" y="321" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-28" value="Creator" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="257" width="140" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-29" value="factoryMethod()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="57HQ5lrbEki3mv6XQ5M7-28">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-30" value="anOperation()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="57HQ5lrbEki3mv6XQ5M7-28">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-34" value="ConcreteCreator" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="440" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-35" value="factoryMethod()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="57HQ5lrbEki3mv6XQ5M7-34">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-39" value="" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=1.014;entryY=0.387;entryDx=0;entryDy=0;exitX=-0.029;exitY=-0.038;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="57HQ5lrbEki3mv6XQ5M7-35" target="57HQ5lrbEki3mv6XQ5M7-10">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="380" y="390" as="sourcePoint" />
+            <mxPoint x="460" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-40" value="ConcreteCreator is responsible for creating one or more concrete products. It is the only class&amp;nbsp; that has the knowledge of how to create this class" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="508" width="269" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-41" value="Creator is a class that contains the implementations for all the methods to manipulate products except for the factory method" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="180" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-43" value="The abstract factoryMethod() is what all creator subclasses must implement" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="669" y="300" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQ5lrbEki3mv6XQ5M7-44" value="ConcreteCreator implements the factoryMethod(), which is the method that actually produces products" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="420" width="230" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
