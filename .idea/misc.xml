@@ -7,11 +7,13 @@
         <option value="$PROJECT_DIR$/singleton-patter/pom.xml" />
         <option value="$PROJECT_DIR$/singleton-pattern/pom.xml" />
         <option value="$PROJECT_DIR$/state-pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/factory-method-pattern/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/singleton-patter/pom.xml" />
+        <option value="$PROJECT_DIR$/state-pattern/pom.xml" />
       </set>
     </option>
   </component>
