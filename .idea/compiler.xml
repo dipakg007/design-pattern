@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="singleton-pattern" />
         <module name="factory-method-pattern" />
+        <module name="abstract-factory-pattern" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
