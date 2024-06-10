@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="abstract-factory-pattern" />
         <module name="singleton-pattern" />
         <module name="factory-method-pattern" />
-        <module name="abstract-factory-pattern" />
+        <module name="observer-pattern" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
