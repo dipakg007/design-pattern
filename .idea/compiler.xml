@@ -10,6 +10,7 @@
         <module name="singleton-pattern" />
         <module name="factory-method-pattern" />
         <module name="observer-pattern" />
+        <module name="strategy-pattern" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

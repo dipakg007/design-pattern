@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/factory-method-pattern/pom.xml" />
         <option value="$PROJECT_DIR$/abstract-factory-pattern/pom.xml" />
         <option value="$PROJECT_DIR$/observer-pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/stratergy-pattern/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
